@@ -1,9 +1,19 @@
 #include <stdio.h>
 
 int main(){
-  unsigned int tower_movies = 5, bishop_movies = 5, queen_movies = 8;
+  int tower_movies = 5, bishop_movies = 5, queen_movies = 8, horse_movies = 3;
 
-  printf("Movimentação da torre: 5 casas à direita\n");
+  printf("Movimentação do cavalo: 2 casas à baixo e à esquerda\n");
+  for (horse_movies; horse_movies > 0; horse_movies--)  {
+    printf("Baixo\n");
+
+    while (horse_movies == 2) {
+      printf("Esquerda\n");
+      horse_movies--;
+    }
+  }
+
+  printf("\nMovimentação da torre: 5 casas à direita\n");
   for (tower_movies; tower_movies > 0; tower_movies--)  {
     printf("Direita\n");
   }
